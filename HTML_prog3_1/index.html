@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
+
+    <title>Programación 3</title>
+</head>
+<body>
+    <header>
+    <h1>Tecnologías de Front End</h1>
+</header>
+<section>
+    <article>
+    <h2>Encabezado principal</h2>
+    <ul>
+        <li><a href="#Estructura">ir a la Estructura</a></li>
+        <li><a href="#Multimedia">ir a Multimedia</a></li>
+        <li><a href="#Formularios">ir a Formulario</a></li>
+    </ul>
+</article>
+<article>
+    <h2 id="Estructura">1.Estructura Basica del Documento HTML</h2>
+    <p> <br>!DOCTYPE html>: Define que es un documento HTML5.
+        <br>html: Contenedor principal de todo el contenido HTML.
+        <br>head: Sección para metadatos y enlaces externos.
+        <br>body: Contiene todo el contenido visible de la página.</p>
+</article>
+<article>
+    <h2>2.Encabezados y Propiedades del Texto</h2>
+    <h2>Texto en Negrita</h2>
+    <p> <b> soy un texto en Negrita</b>
+    </p>
+    <h3>Texto en Cursiva</h3>
+    <p> <em>Soy un texto en cursiva</em> </p>
+
+    <h4>Texto Subrayado</h4>
+    <p> <u>Soy un texto Subrayado</u> </p>
+    <h5>Texto en h5</h5>
+    <h6>Texto en h6</h6>
+</article>
+<article>
+    <h2>3. Divisiones y Agrupaciones de Contenido</h2>
+    <div>
+        <h3>Seccion 1</h3>
+        <p>Contenido de Division 1 agrupada en un div</p>
+        
+    </div>
+    <div>
+        <h3>Seccion 2</h3>
+        <p>Contenido de Division 2 agrupada en un div</p>
+    </div>
+</article>
+<article>
+    <h2>4. Enlaces y Listas</h2>
+    <nav>
+    <p>Visita Nuesto <a href="https://lenguajehtml.com/html/"> sitio web</a> para más info </p>    
+    </nav>
+    <h3>Enlaces Internos</h3>
+    <ul>
+        <li><a href="#Estructura">ir a la Estructura</a></li>
+        <li><a href="#Multimedia">ir a Multimedia</a></li>
+        <li><a href="#Formularios">ir a Formulario</a></li>
+    </ul>
+
+    <h3>Lista Desordenada</h3>
+    <ul>
+        <li>Primer Elemento de una lista desordenada</li>
+        <li>Segundo Elemento de una lista desordenada</li>
+    </ul>
+    
+    <h3>Lista Ordenada</h3>
+    <ol>
+        <li>Primer Elemento de una lista Ordenada</li>
+        <li>Segundo Elemento de una lista Desordenada</li>
+    </ol>
+</article>
+<article>
+    <h2 id="Multimedia">5. elementos Multimedias</h2>
+    <img src="img/img_potre.jpg" width="300" alt="Potrerillos luego de pasar el Tunel">
+    <video controls autoplay loop muted poster="img/img_potre.jpg">
+        <source src="video_files/video.mp4"  type="video/mp4">
+        Tu navegador no soportara el elemento del video
+    </video>
+    <audio controls>
+        <source src="audio/audio.ogg" type="audio/mpeg">
+    </audio>
+</article>
+<article>
+    <h2>6. Tablas</h2>
+    <table style="width: 300px;">
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+            </tr>
+            <tr>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+        </tbody>
+    </table>
+   </article> 
+</section>
+
+<footer>
+    <section>
+        <h2 id="Formularios">Formularios</h2>
+        <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+        <label for="email">Correo Electronico</label>
+            <input type="email" id="email" name="email" required/>
+        <label for="mensaje"> mensaje</label>
+            <textarea cols="50" rows="0" name="mensaje" id="mensaje" required></textarea>
+        <button type="reset">Enviar</button>
+    </form>
+    </section>
+</footer>
+</body>
+</html>
