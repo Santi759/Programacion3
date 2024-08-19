@@ -1,0 +1,242 @@
+
+html{
+    font-family: "Montserrat", sans-serif,;
+}
+
+
+body{
+    margin: 0;
+    background-color: #efefef;
+}
+
+header{
+    background-color: #3e1947;
+    color: white;
+    padding: 1rem;
+}
+
+header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+header p{
+font-size: 15px;
+text-align: center;
+}
+
+section article h2{
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #000000;;
+
+}
+
+section article p{
+    margin-left: 2rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+#cita{
+    background-color: rgba(211, 211, 211, 0.3);
+    padding: 20px;
+    border-left: 4px solid rgb(128, 128, 128);
+}
+
+#box1{
+    margin-left: 2rem;
+    margin-right: 25rem;
+    padding: 15px;
+    border-top: 2px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(49, 45, 45, 1);
+}
+
+#box2{
+    margin-left: 2rem;
+    margin-right: 25rem;
+    margin-top: 1rem;
+    padding: 15px;
+    border-top: 4px solid #000000;
+    border-left: 4px solid #000000;
+    border-right: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    border-radius: 0.5rem;
+    background-color: #3e1947;
+    color: #f3f3f3;
+}
+
+.posRelativa{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: lightblue;
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 100rem;
+    height: 1rem;
+}
+
+.posAbsoluta{
+    position: absolute;
+    top: 2rem;
+    left: 44rem;
+    background-color: coral;
+    padding: 10px;
+    width: 40rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media(max-width: 768px){
+    body{
+        background-color: rgb(116, 111, 111);
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+    header p{
+        font-size: 14px;
+    }
+    section article h2{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    section article p{
+        margin-left: 1rem;
+    }
+    #cita{
+        padding: 10px;
+    }
+
+    #box1{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 30rem;
+    }
+    #box2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+        width: 30rem;
+    }
+    .posRelativa{
+        width: 80rem;
+        height: auto;
+    }
+    .posAbsoluta{
+        width: 30rem;
+        height: auto;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .grid-item{
+        
+        background-color: rgb(56, 115, 193);
+        color: #efefef;
+        padding: 15px;
+        text-align: center;
+        border: 1px solid rgb(56, 115, 193);
+        border-radius: 0.5rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .grid-item:hover{
+        box-shadow: 0 0.1rem 0.4rem rgba(49, 45, 45, 1);
+    }
+    .animacion{
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        margin-left: 5px;
+        border-radius: 8px;
+        transition: background-color 0.5 ease;
+    }
+    .animacion.hover{
+        background-color: #e74c3c;
+    }
+    .mover{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-left: 5px;
+        border-radius: 8px;
+        transition: background-color 0.5 ease;
+    }
+    @keyframes moverIzquierdaDerecha{
+        0%{
+            transform: translateX(0);
+        }
+        50%{
+            transform: translateX(300px);
+        }
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.grid-item{
+    
+    background-color: rgb(56, 115, 193);
+    color: #efefef;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid rgb(56, 115, 193);
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.grid-item:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(49, 45, 45, 1);
+}
+
+.animacion{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 5px;
+    border-radius: 8px;
+    transition: background-color 0.5 ease;
+}
+
+.animacion.hover{
+    background-color: #e74c3c;
+    
+}
+
+.mover{
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    margin-top: 5px;
+    border-radius: 50px;
+    animation: moverIzquierdaDerecha 3s linear infinite;
+}
+
+@keyframes moverIzquierdaDerecha{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(300px);
+    }
+}
+
+
+
+
+
+
